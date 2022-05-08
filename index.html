@@ -14,7 +14,7 @@
 </head>
 <body>
     <main>
-
+        <!-- SIDEBAR -->
         <aside class="sidebar active" data-sidebar>
             <div class="sidebar-info">
                 <figure class="avatar-box">
@@ -117,9 +117,9 @@
                     <li class="navbar-item">
                         <button class="navbar-link" data-nav-link>Portfolio</button>
                     </li>
-                    <!-- <li class="navbar-item">
+                    <li class="navbar-item">
                         <button class="navbar-link" data-nav-link>Blog</button>
-                    </li> -->
+                    </li>
                     <li class="navbar-item">
                         <button class="navbar-link" data-nav-link>Contact</button>
                     </li>
@@ -128,7 +128,7 @@
 
 
             <!-- ABOUT -->
-            <article class="about" data-page="about">
+            <article class="about active" data-page="about">
 
                 <header>
                     <h2 class="h2 article-title">About Me</h2>
@@ -143,7 +143,7 @@
                     </p>
                 </section>
 
-                <!-- SERVICES -->
+                <!-- Services -->
                 <section class="service">
 
                     <h3 class="h3 service-title">What I'm Doing</h3>
@@ -200,7 +200,7 @@
                 </section>
 
 
-                <!-- TESTIMONIALS -->
+                <!-- testimonials -->
                 <section class="testimonials">
 
                     <h3 class="h3 testimonials-title">Testimonials</h3>
@@ -281,7 +281,7 @@
                     </ul>
                 </section>
 
-                <!-- TESTIMONIAL MODAL -->
+                <!-- Testimonial modal -->
                 <div class="modal-container" data-modal-container>
 
                     <div class="overlay" data-overlay></div>
@@ -317,7 +317,7 @@
                 </div>
 
 
-                <!-- CLIENTS -->
+                <!-- Clients -->
                 <section class="clients">
                     <h3 class="h3 clients-title">Clients</h3>
 
@@ -349,7 +349,7 @@
 
 
             <!-- RESUME -->
-            <article class="resume active" data-page="resume">
+            <article class="resume" data-page="resume">
 
                 <header>
                     <h2 class="h2 article-title">Resume</h2>
@@ -492,8 +492,9 @@
 
             </article>
 
+
             <!-- PORTFOLIO -->
-            <article class="portfolio active" data-page="portfolio">
+            <article class="portfolio" data-page="portfolio">
                 
                 <header>
                     <h2 class="h2 article-title">Portfolio</h2>
@@ -524,7 +525,7 @@
                     <div class="filter-select-box">
 
                         <button class="filter-select" data-select>
-                            <div class="select-value"       data-select-value>Select category</div>
+                            <div class="select-value" data-select-value>Select category</div>
 
                             <div class="select-icon">
                                 <ion-icon name="chevron-down"></ion-icon>
@@ -545,7 +546,7 @@
                             </li>
 
                             <li class="select-item">
-                                <button data-select-item>Web Design</button>
+                                <button data-select-item>Web Development</button>
                             </li>
                         </ul>
 
@@ -598,7 +599,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item active" data-filter-item data-category="application">
+                        <li class="project-item active" data-filter-item data-category="applications">
                             <a href="#">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
@@ -658,7 +659,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item active" data-filter-item data-category="application">
+                        <li class="project-item active" data-filter-item data-category="applications">
                             <a href="#">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
@@ -693,15 +694,206 @@
 
             </article>
 
+
+            <!-- BLOG -->
+            <article class="blog" data-page="blog">
+                <header>
+                    <h2 class="h2 article-title">Blog</h2>
+                </header>
+
+                <section class="blog-posts">
+                    <ul class="blog-posts-list">
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/blog-1.jpg" alt="css tricks" loading="lazy">
+                                </figure>
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+    
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Feb 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">Beautiful CSS tricks we should know</h3>
+    
+                                    <p class="blog-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde esse aliquam veritatis. Repellat, fugiat veniam quisquam molestiae quos nam.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                                </figure>
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+    
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Feb 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">Best fonts every designer should know</h3>
+    
+                                    <p class="blog-text">
+                                        Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+    
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Feb 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+    
+                                    <p class="blog-text">
+                                        Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+    
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Feb 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+    
+                                    <p class="blog-text">
+                                        Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+    
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Feb 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+    
+                                    <p class="blog-text">
+                                        Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    </p>
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+    
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Feb 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+    
+                                    <p class="blog-text">
+                                        Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                                    </p>
+                                </div>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+            <!-- CONTACTS -->
+            <article class="contact" data-page="contact">
+
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe src="" frameborder="1" width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="#" class="form" data-form>
+
+                        <div class="input-wrapper">
+
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+
+                        </div>
+
+                        <textarea name="message" id="#" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+
+                        </button>
+                    </form>
+                </section>
+            </article>
+
         </div>
 
     </main>
 
-
-
-
     <script src="./assets/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
