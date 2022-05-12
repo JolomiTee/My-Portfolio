@@ -4,3 +4,5 @@
  Through this portfolio template of which I actually coded along..all 3hrs+ of it while implementing my own small changes,
  I was able to grasp so much more of CSS, Javascript and HTML structuring which I didn't know before. I hope this will lead to getting me 
  a better idea or perspective on making my own original design of a Web Designers portfolio.
+ 
+ ## Live Link: https://jolomitee.github.io/My-Portfolio/
