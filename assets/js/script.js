@@ -1,6 +1,7 @@
 'use strict'
 
 
+
 // element toggle function
 const elementToggleFunc = function (elem) {
     elem.classList.toggle("active");
@@ -57,8 +58,9 @@ overlay.addEventListener('click', testimonialsModalFunc);
 const select = document.querySelector('[data-select]');
 const selectItems = document.querySelectorAll('[data-select-item]');
 const selectValue = document.querySelector('[data-select-value]');
+const filterBtn = document.querySelectorAll('[data-filter-btn]');
 
-select.addEventListener('click', function (params) {
+select.addEventListener('click', function () {
     elementToggleFunc(this);
 });
 
@@ -68,8 +70,8 @@ for (let i = 0; i < selectItems.length; i++) {
         let selectedValue = this.innerText.toLowerCase();
         selectValue.innerText = this.innerText;
         elementToggleFunc(select);
-        filterFunc(selectedValue)
-    })
+        filterFunc(selectedValue);
+    });
     
 }
 
@@ -90,6 +92,23 @@ const filterFunc = function (selectedValue) {
 }
 
 
+// add event in all filter buttons for large screen
+let lastClickedBtn = filterBtn[0];
+
+for (let i = 0; i < filterBtn.length; i++) {
+
+    filterBtn[i].addEventListener('click', function () {
+
+        let selectedValue = this.innerText.toLowerCase();
+        selectValue.innerText = this.innerText;
+        filterFunc(selectValue);
+
+        lastClickedBtn.classList.remove('active');
+        this.classList.add('active');
+        lastClickedBtn = this;
+    });
+}
+
 
 
 // contact form variables
@@ -109,7 +128,7 @@ for (let i = 0; i < formInputs.length; i++) {
         if (form.checkValidity()) {
             formBtn.removeAttribute('disabled');
         } else {
-            formBtn.setAttribute('disabled', '')
+            formBtn.setAttribute('disabled', '');
         }
     });
     
